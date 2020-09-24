@@ -1,0 +1,23 @@
+{
+	"Project": [
+		{
+			"Name": "Work",
+			"Tasks": [
+				"Send emails",
+				"Write doc"
+			]
+
+        },
+        {
+			"Name": "Home",
+			"Tasks": [
+				"Pay Electricity Bill",
+				"Buy Groceries",
+				"Car Servicing",
+				"Buy Concert Ticket"
+			]
+
+		}
+	]
+
+}

@@ -1,0 +1,13 @@
+
+<div class="category-tabs center">
+    <label class="tab-label">Select  the Project</label>
+    <mat-form-field appearance="fill">
+        <mat-select [(ngModel)]="selectedOption" name="" (selectionChange)="updateNotes($event.value)">
+            <mat-option *ngFor="let tab of notesData" [value]="tab.Name">{{tab.Name}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+
+<div class="notes-container">
+    <note-details [notes]=selectedTabNotes></note-details>
+</div>

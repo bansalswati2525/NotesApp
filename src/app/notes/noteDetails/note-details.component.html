@@ -1,0 +1,9 @@
+<ul class="example-list" cdkDropList (cdkDropListDropped)="drop($event)">
+    <li *ngFor="let note of notes" class="example-box" cdkDrag>
+        <div class="item-border" >
+            <mat-checkbox >
+                {{note}}
+            </mat-checkbox>
+        </div>
+    </li>
+</ul>
