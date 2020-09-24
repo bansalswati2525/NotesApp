@@ -59,9 +59,9 @@ export class AppNotesComponent {
 
     updateNotes (value:any) {
         console.log(value);
-        let selectedtabs = this.notesData.filter(
+        let selectedtab = this.notesData.reduce(
             tabObj => tabObj.Name === value);
-        this.selectedTabNotes = selectedtabs[0].Tasks;
+        this.selectedTabNotes = selectedtab.Tasks;
         
     }
 
